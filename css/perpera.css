@@ -1,0 +1,120 @@
+:root {
+    --color-chalk: #2B343E;
+    --color-chalk-60: rgba(43, 52, 62, 0.6);
+    --color-chalk-04: rgba(43, 52, 62, 0.04);
+    --color-chalk-15: rgba(43, 52, 62, 0.15);
+    --color-dark: #1E261F;
+    --color-green: #3CB054;
+    --color-red: #c72b2b;
+    --easing-natural: cubic-bezier(.01,.74,.46,1);
+}
+
+.perperaTabView {
+    font-size: 12px;
+    max-width: 400px;
+}
+
+.hash {
+    position: relative;
+    padding: 15px;
+    margin-top: 15px;
+    background: var(--color-chalk-04);
+    border-top: 1px solid var(--color-chalk-04);
+    border-bottom: 1px solid var(--color-chalk-04);
+    text-align: center;
+}
+
+.hash .label {
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    margin-top: -10px;
+    margin-left: -30px;
+    width: 60px;
+    background: var(--color-chalk);
+    border-radius: 30px;
+    padding: 3px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.hash .label:hover {
+    background: var(--color-green);
+    cursor: pointer;
+}
+
+.hash .hash-string {
+    color: var(--color-chalk);
+    word-break: break-all;
+}
+
+.form {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.form .form-field {
+    display: flex;
+    width: 100%;
+    height: 30px;
+    background: var(--color-chalk-04);
+    border: none;
+    border-top: 1px solid var(--color-chalk-04);
+    border-bottom: 1px solid var(--color-chalk-04);
+    color: var(--color-chalk);
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    padding: 0px;
+    resize: none;
+}
+
+.form .warning {
+    color: var(--color-red);
+}
+
+.form .success {
+    color: var(--color-green);
+}
+
+.form button {
+    display: block;
+    width: 100%;
+    max-width: 285px;
+    padding: 10px;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    margin: 20px auto;
+    color: #fff;
+    background: var(--color-green);
+    transition: background 0.1s linear;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background: var(--color-chalk-60);
+}
+
+.form label {
+    position: relative;
+}
+
+.eye-slash-regular {
+    content: url(./eye-slash-regular.svg);
+    width: 16px;
+    margin-left: 1rem;
+    cursor: pointer;
+    position: absolute;
+    top: 1px;
+}
+
+.eye-regular {
+    content: url(./eye-regular.svg);
+    width: 16px;
+    margin-left: 1rem;
+    cursor: pointer;
+    position: absolute;
+    top: 1px;
+}
+  

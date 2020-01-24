@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<info xmlns:xsi= "http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
+    <id>perpera</id>
+    <name>Perpera</name>
+    <summary>A Data Audit Protocol.</summary>
+    <description>
+        The primary purpose of this protocol is to record cryptographic hashes of successive revisions of single-file documents in a public blockchain, in a manner which enables thin clients to easily query and verify document histories. Such histories inherit useful properties from the underlying blockchain, namely immutability and massive replication, and can therefore serve as proofs of existence.
+    </description>
+    <version>0.4.3</version>
+    <licence>agpl</licence>
+    <author>matvei</author>
+    <types>
+      <filesystem/>
+    </types>
+    <documentation>
+        <user>https://github.com/westberliner/owncloud-checksum/blob/master/README.md</user>
+        <admin>https://github.com/westberliner/owncloud-checksum/blob/master/README.md</admin>
+    </documentation>
+    <category>files</category>
+    <category>tools</category>
+    <website>https://github.com/westberliner/owncloud-checksum/</website>
+    <bugs>https://github.com/westberliner/owncloud-checksum/issues</bugs>
+    <screenshot>https://raw.githubusercontent.com/westberliner/owncloud-checksum/master/screenshots/checksum.gif</screenshot>
+    <dependencies>
+        <owncloud min-version="9.0" max-version="11" />
+        <nextcloud min-version="9" max-version="17" />
+    </dependencies>
+</info>
